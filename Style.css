@@ -1,0 +1,672 @@
+* {
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+}
+
+html {
+scroll-behavior: smooth;
+
+}
+
+body {
+
+```
+font-family: Arial, sans-serif;
+
+background: #111118;
+
+color: white;
+
+line-height: 1.6;
+```
+
+}
+
+.navbar {
+
+```
+display: flex;
+
+justify-content: space-between;
+
+align-items: center;
+
+padding: 20px 8%;
+
+background: #15151d;
+
+position: sticky;
+
+top: 0;
+
+z-index: 1000;
+```
+
+}
+
+.logo {
+
+```
+font-size: 22px;
+
+font-weight: bold;
+```
+
+}
+
+.logo span {
+
+```
+color: #f5b400;
+```
+
+}
+
+nav {
+
+```
+display: flex;
+
+gap: 25px;
+```
+
+}
+
+nav a {
+
+```
+color: white;
+
+text-decoration: none;
+```
+
+}
+
+nav a:hover {
+
+```
+color: #f5b400;
+```
+
+}
+
+.hero {
+
+```
+min-height: 80vh;
+
+display: flex;
+
+justify-content: space-between;
+
+align-items: center;
+
+padding: 80px 10%;
+
+background-image:
+
+linear-gradient(
+
+    rgba(0, 0, 0, 0.65),
+
+    rgba(0, 0, 0, 0.65)
+
+),
+
+url("images/party.jpg");
+
+
+background-size: cover;
+
+background-position: center;
+```
+
+}
+
+.hero-content {
+
+```
+max-width: 650px;
+```
+
+}
+
+.small-title {
+
+```
+color: #f5b400;
+
+font-weight: bold;
+
+margin-bottom: 20px;
+```
+
+}
+
+.hero h1 {
+
+```
+font-size: 65px;
+
+line-height: 1.1;
+```
+
+}
+
+.hero h1 span {
+
+```
+display: block;
+
+color: #f5b400;
+```
+
+}
+
+.description {
+
+```
+font-size: 20px;
+
+margin: 25px 0;
+```
+
+}
+
+.main-button,
+.secondary-button {
+
+```
+display: inline-block;
+
+padding: 15px 25px;
+
+background: #f5b400;
+
+color: #111118;
+
+text-decoration: none;
+
+font-weight: bold;
+
+border-radius: 5px;
+```
+
+}
+
+.date-box {
+
+```
+text-align: center;
+
+border: 2px solid #f5b400;
+
+padding: 25px;
+```
+
+}
+
+.date-box strong {
+
+```
+display: block;
+
+font-size: 70px;
+
+color: #f5b400;
+```
+
+}
+
+.event-info {
+
+```
+display: grid;
+
+grid-template-columns: repeat(4, 1fr);
+
+gap: 20px;
+
+padding: 40px 8%;
+
+text-align: center;
+
+background: #191923;
+```
+
+}
+
+.event-info h3 {
+
+```
+color: #f5b400;
+```
+
+}
+
+.section {
+
+```
+padding: 90px 10%;
+```
+
+}
+
+.section-title {
+
+```
+text-align: center;
+
+margin-bottom: 50px;
+```
+
+}
+
+.section-title p {
+
+```
+color: #f5b400;
+
+font-weight: bold;
+```
+
+}
+
+.section-title h2 {
+
+```
+font-size: 40px;
+```
+
+}
+
+.about-content {
+
+```
+display: grid;
+
+grid-template-columns: 1fr 1fr;
+
+gap: 50px;
+
+align-items: center;
+```
+
+}
+
+.about-text h3 {
+
+```
+color: #f5b400;
+
+font-size: 28px;
+
+margin-bottom: 20px;
+```
+
+}
+
+.about-text p {
+
+```
+margin-bottom: 20px;
+```
+
+}
+
+.image-grid {
+
+```
+display: grid;
+
+grid-template-columns: repeat(2, 1fr);
+
+gap: 20px;
+```
+
+}
+
+.image-card {
+
+```
+background: #1b1b25;
+
+border-radius: 8px;
+
+overflow: hidden;
+```
+
+}
+
+.image-card img {
+
+```
+width: 100%;
+
+height: 180px;
+
+object-fit: cover;
+
+display: block;
+```
+
+}
+
+.image-card h3 {
+
+```
+padding: 15px;
+
+color: #f5b400;
+
+text-align: center;
+```
+
+}
+
+.image-card:last-child {
+
+```
+grid-column: span 2;
+```
+
+}
+
+.ticket-section {
+
+```
+background: #191923;
+```
+
+}
+
+form {
+
+```
+max-width: 600px;
+
+margin: auto;
+
+display: flex;
+
+flex-direction: column;
+
+gap: 12px;
+```
+
+}
+
+label {
+
+```
+font-weight: bold;
+
+margin-top: 10px;
+```
+
+}
+
+input,
+select {
+
+```
+padding: 15px;
+
+border: none;
+
+border-radius: 5px;
+
+font-size: 16px;
+```
+
+}
+
+form button {
+
+```
+padding: 16px;
+
+margin-top: 20px;
+
+background: #f5b400;
+
+color: #111118;
+
+border: none;
+
+border-radius: 5px;
+
+font-size: 16px;
+
+font-weight: bold;
+
+cursor: pointer;
+```
+
+}
+
+form button:hover {
+
+```
+background: #ffffff;
+```
+
+}
+
+#message {
+
+```
+text-align: center;
+
+color: #f5b400;
+
+margin-top: 15px;
+```
+
+}
+
+.contact-cards {
+
+```
+display: grid;
+
+grid-template-columns: repeat(3, 1fr);
+
+gap: 25px;
+
+text-align: center;
+```
+
+}
+
+.contact-cards div {
+
+```
+background: #1b1b25;
+
+padding: 30px;
+
+border-radius: 8px;
+```
+
+}
+
+.contact-cards h3 {
+
+```
+color: #f5b400;
+
+margin-bottom: 10px;
+```
+
+}
+
+.developer-section {
+
+```
+text-align: center;
+```
+
+}
+
+.developer-card {
+
+```
+max-width: 500px;
+
+margin: auto;
+
+background: #1b1b25;
+
+padding: 35px;
+
+border-radius: 10px;
+```
+
+}
+
+.developer-card img {
+
+```
+width: 150px;
+
+height: 150px;
+
+border-radius: 50%;
+
+object-fit: cover;
+
+margin-bottom: 20px;
+```
+
+}
+
+.developer-card h3 {
+
+```
+font-size: 25px;
+```
+
+}
+
+.developer-role {
+
+```
+color: #f5b400;
+
+margin-bottom: 15px;
+```
+
+}
+
+footer {
+
+```
+text-align: center;
+
+padding: 40px;
+
+background: #0b0b0f;
+```
+
+}
+
+footer h3 {
+
+```
+color: #f5b400;
+```
+
+}
+
+@media (max-width: 800px) {
+
+```
+.navbar {
+
+    flex-direction: column;
+
+    gap: 20px;
+
+}
+
+
+nav {
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+}
+
+
+.hero {
+
+    flex-direction: column;
+
+    text-align: center;
+
+    gap: 40px;
+
+}
+
+
+.hero h1 {
+
+    font-size: 45px;
+
+}
+
+
+.event-info {
+
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+
+.about-content {
+
+    grid-template-columns: 1fr;
+
+}
+
+
+.contact-cards {
+
+    grid-template-columns: 1fr;
+
+}
+```
+
+}
+
+@media (max-width: 500px) {
+
+```
+.event-info {
+
+    grid-template-columns: 1fr;
+
+}
+
+
+.image-grid {
+
+    grid-template-columns: 1fr;
+
+}
+
+
+.image-card:last-child {
+
+    grid-column: span 1;
+
+}
+```
+
+}
